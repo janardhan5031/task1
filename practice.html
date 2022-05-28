@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+   <style>
+        .list-items{
+            border: 1px solid black;
+            margin: 30px;
+            padding: 10px;
+            list-style: none;
+        }
+        .items{
+            border: 1px solid red;
+            margin: 5px;
+            padding: 5px;
+            
+        }
+        .btn-del{
+            position: absolute;
+            align-items: center;
+            right: 100px;
+            background-color:red;
+            margin-bottom: 1px;
+            color: white;
+        }
+        .btn-dngr{
+            border: 1px solid red;
+        }
+        /*.del-btn{
+            color: white;
+        }*/
+        button{
+            border: 1px solid rgb(96, 83, 216);
+            background-color:lightblue;
+            align-items:center;
+            position: absolute;
+            right: 45%;
+            
+        }
+        button:hover{
+            background-color: rgb(96, 83, 216);
+        }
+        .add-items{
+            border: 0.5px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+        #add-input{
+            position: relative;
+            left: 10px;
+
+        }
+        #add-btn{
+            position:relative;
+            right:-20px;
+        }
+        .header{
+            border: 1px solid yellowgreen;
+            align-items: center;
+            position: relative;
+        }
+        #filter{
+            position:absolute;
+        
+            right:10%;
+            top:30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 id="head">this is head</h1>
+        <input id="filter" placeholder="Search">
+    </div>
+    <div class="add-items" id="add-div">
+        <form id="form">
+            <input id="add-input" type="text" placeholder="add items" value="">
+            <button id="add-btn" type="submit" id="add">submit</button>
+        </form>
+    </div>
+    <ul id="list" class="list-items" action="target">
+        <li class="items">jani<button class="btn-del btn-dngr del-btn">X</button></li>
+        <li class="items">sai<button class="btn-del btn-dngr del-btn">X</button></li>
+    </ul>
+    <button type="submit" >submit</button>
+    <script src="my-practice.js"></script>
+    
+</body>
+</html>
