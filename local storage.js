@@ -42,6 +42,8 @@ submit.addEventListener('click',(e)=>{
 });
 
 
+
+
 // testing local storage
 //localStorage.setItem('name','jani');
 //var item=localStorage.getItem('obj1');
